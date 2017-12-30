@@ -1,5 +1,9 @@
 var mic, recorder, soundFile;
 
+function preload(){
+    soundFile = loadSound("Inception.mp3");
+}
+
 function setup(){
     
     mic = new p5.AudioIn();
@@ -8,7 +12,7 @@ function setup(){
     recorder = new p5.SoundRecorder();
     recorder.setInput(mic);
 
-    soundFile = new p5.SoundFile();
+    //soundFile = new p5.SoundFile();
 
 }
 
